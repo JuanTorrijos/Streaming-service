@@ -42,12 +42,9 @@ int main(){
 					capsAvatar.insert(capsAvatar.end(), {"El niño en el iceberg", "El regreso del Avatar", "El templo del Aire del Sur"});
 				vector<string> capsTBBT;
 					capsTBBT.insert(capsTBBT.end(), {"The Big Bran Hypothesis", "The Fuzzy Boots Corollary"});
-				Video *peli1 = new Pelicula("Mulan","Infantil",5,2000,120, 1);
-				videos.push_back(peli1);
-				Video *peli2 = new Pelicula("Ender's Game","Ficcion",4,2014,120, 3);
-				videos.push_back(peli2);
-				Video *peli3 = new Pelicula("It","Terror",2,2018,120, 0);
-				videos.push_back(peli3);
+				videos.push_back(new Pelicula("Mulan","Infantil",5,2000,120, 1));
+				videos.push_back(new Pelicula("Ender's Game","Ficcion",4,2014,120, 3));
+				videos.push_back(new Pelicula("It","Terror",2,2018,120, 0));
 
 				Video *serie1 = new Serie("Avatar","Animada",5,2004,30, 3, 3);
 				for (int i=0 ; i<serie1->getCap() ; i++){

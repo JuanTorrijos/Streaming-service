@@ -26,7 +26,7 @@ protected:
 public:
 	vector<Capitulo> episodios;
     void calificaVideo(int);
-    virtual void muestraDatos() = 0;
+    virtual void muestraDatos();
 	virtual void agregaCap(Capitulo);
 	virtual int getCap();
     Video();
